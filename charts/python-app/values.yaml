@@ -1,8 +1,8 @@
 replicaCount: 1
 image:
-  repository: ricardoandre9707/python-app
+  repository: pivanov83/python-app
   pullPolicy: IfNotPresent
-  tag: ed7159
+  tag: v2
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -20,7 +20,7 @@ service:
   port: 5000
 ingress:
   enabled: true
-  className: "nginx"
+  className:
   annotations: {}
   hosts:
     - host: python-app.test.com
